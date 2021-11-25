@@ -44,7 +44,7 @@ footer {
 }
 
 *:focus {
-  outline: 1px dotted #000;
+  outline: none;
 }
 
 body {
@@ -114,8 +114,16 @@ body {
   list-style: none;
   flex-grow: 1;
   padding-left: 90px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.navigation .active .link::after {
+  opacity: 1;
+}
+
+.navigation .active .link {
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .header-item:not(:last-child) {
@@ -130,7 +138,28 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-  padding: 15px 0;
+  padding: 32px 0;
+}
+
+.over-first-link,
+.over-second-link,
+.over-thirst-link {
+  position: relative;
+}
+
+.studio::after,
+.portfolio::after,
+.contacts::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -33px;
+  display: inline-block;
+  background-color: rgba(33, 150, 243, 1);
+  border-radius: 2px;
+  opacity: 0;
 }
 
 .studio:hover,
