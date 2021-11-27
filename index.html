@@ -75,7 +75,7 @@
     <main>
       <section class="solutions overlay">
         <h1 class="core">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="order">Заказать услугу</button>
+        <button type="button" class="order" data-modal-open>Заказать услугу</button>
       </section>
       <section class="section">
         <div class="container">
@@ -455,14 +455,15 @@
         </div>
       </div>
     </footer>
-  </body>
-</html>
-<div class="backdrop">
+  <div class="backdrop" data-modal> 
   <div class="modal">
-    <button class="modal-close">
+    <button class="modal-close" data-modal-close>
       <svg class="modal-close-btn" width="11px" height="11px">
         <use href="./images/icons.svg#icon-Vector"></use>
       </svg>
     </button>
   </div>
 </div>
+<script src="./js/modal.js"></script>
+</body>
+</html>
