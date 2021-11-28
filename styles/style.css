@@ -226,9 +226,9 @@ body {
 .mail::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 25px;
   bottom: 33px;
-  width: 100%;
+  width: 85%;
   height: 1px;
   background-color: var(--accent-color);
   opacity: 0;
@@ -262,9 +262,9 @@ body {
 .telephone::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 19px;
   bottom: 35px;
-  width: 100%;
+  width: 87%;
   height: 1px;
   background-color: var(--accent-color);
   opacity: 0;
